@@ -23,24 +23,19 @@ See the difference at **[dashboard-v4-eta.vercel.app](https://dashboard-v4-eta.v
 
 ## Installation
 
-### Quick Install (macOS/Linux)
+### Plugin Install (Recommended)
+
+```
+/plugin install github:Dammyjay93/claude-design-skill
+```
+
+### Manual Install (Legacy)
 
 ```bash
 mkdir -p ~/.claude/skills/frontend-design
 curl -o ~/.claude/skills/frontend-design/SKILL.md \
-  https://raw.githubusercontent.com/Dammyjay93/claude-design-skill/main/skill/SKILL.md
+  https://raw.githubusercontent.com/Dammyjay93/claude-design-skill/main/skills/SKILL.md
 ```
-
-### Manual Install
-
-1. Create the skill directory:
-   ```bash
-   mkdir -p ~/.claude/skills/frontend-design
-   ```
-
-2. Copy `skill/SKILL.md` to `~/.claude/skills/frontend-design/SKILL.md`
-
-3. Restart Claude Code
 
 ## Usage
 
@@ -80,13 +75,16 @@ The skill supports multiple design personalities:
 ## File Structure
 
 ```
-~/.claude/skills/frontend-design/
-└── SKILL.md          # The skill definition
+claude-design-skill/
+├── .claude-plugin/
+│   └── plugin.json   # Plugin manifest
+└── skills/
+    └── SKILL.md      # The skill definition
 ```
 
 ## Customization
 
-Fork this repo and modify `skill/SKILL.md` to match your design system. Key sections to customize:
+Fork this repo and modify `skills/SKILL.md` to match your design system. Key sections to customize:
 
 - **Design Directions** — Add your own personality options
 - **Color Foundation** — Define your brand colors
