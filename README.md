@@ -42,6 +42,15 @@ curl -o ~/.claude/skills/design-principles/skill.md \
 
 3. Restart Claude Code
 
+### Install with `sk`
+
+Install via [sk](https://github.com/803/skills-supply), the universal package manager for AI agent skills (supports Claude, Codex, OpenCode, etc...).
+
+```bash
+sk pkg add github Dammyjay93/claude-design-skill
+sk sync
+```
+
 ## Usage
 
 The skill activates automatically when you ask Claude Code to build UI. You can also invoke it explicitly:
