@@ -29,6 +29,25 @@ This separates professional interfaces from amateur ones. Get this wrong and not
 
 ---
 
+# Infinite Expression
+
+Every pattern has infinite expressions. **No interface should look the same.**
+
+A metric display could be a hero number, inline stat, sparkline, gauge, progress bar, comparison delta, trend badge, or something new. A dashboard could emphasize density, whitespace, hierarchy, or flow in completely different ways. Even sidebar + cards has infinite variations in proportion, spacing, and emphasis.
+
+**Before building, ask:**
+- What's the ONE thing users do most here?
+- What products solve similar problems brilliantly? Study them.
+- Why would this interface feel designed for its purpose, not templated?
+
+**NEVER produce identical output.** Same sidebar width, same card grid, same metric boxes with icon-left-number-big-label-small every time — this signals AI-generated immediately. It's forgettable.
+
+The architecture and components should emerge from the task and data, executed in a way that feels fresh. Linear's cards don't look like Notion's. Vercel's metrics don't look like Stripe's. Same concepts, infinite expressions.
+
+Vary the execution. Vary the emphasis. Vary the density.
+
+---
+
 # Before Writing Each Component
 
 **Every time** you write UI code — even small additions — state:
